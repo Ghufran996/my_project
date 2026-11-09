@@ -1,0 +1,10 @@
+# Source: L26 Rauls et al. 2023, Appl. Energy 330:120350, doi 10.1016/j.apenergy.2022.120350 (open access full text, read 2026-10-30)
+# extraction: text/table (HTML tables of the publisher page; no digitisation)
+# table2_* = Table 2 (scale-up parameters); table4_* = Table 4 (masses/surfaces); table5 = Table 5 reference H2 quanta
+# Row label "50" in Tables 2 and 4 is printed as 50 kWel; Table 5 and the text name the same test-station system "100 kWel" (two 27-cell stacks). Mapping not stated by the paper.
+row_label_kW,table5_kW,t2_membrane_um,t2_cell_area_cm2,t2_n_cells,t2_j_nom_A_cm2,t2_Ucell_nom_V,t2_heating_kW,t4_m_stack_steel_kg,t4_m_stack_copper_kg,t4_m_stack_titanium_kg,t4_m_stack_H2O_kg,t4_S_stack_steel_m2,t4_S_stack_PEEK_m2,t4_m_periph_steel_kg,t4_m_periph_H2O_kg,t4_S_periph_steel_m2,t5_mH2_max_kg
+5,5,50,100,8,3.50,1.79,2,23.8,2.1,0.3,0.8,0.11,0.05,52.5,8.1,0.98,0.15
+50,100,50,300,27,3.50,1.79,4,80.0,6.7,3.5,5.2,0.25,0.16,191.1,74.1,3.47,0.73
+400,400,50,1056,73,3.00,1.75,12,500.0,19.0,48.7,33.3,0.72,0.56,755.0,226.8,8.52,2.81
+750,750,50,2220,64,3.00,1.75,18,763.1,23.2,92.4,43.7,1.04,0.62,1426.3,505.4,13.77,5.57
+1000,1000,50,3000,53,3.50,1.79,25,942.1,45.6,123.6,48.2,1.28,0.60,2252.4,835.9,19.21,9.61

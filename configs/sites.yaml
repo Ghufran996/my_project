@@ -1,0 +1,57 @@
+window: 2013-2018 (D27)
+pass_rule: frac_valid_all3 >= 0.95
+sites:
+  Cabauw:
+    lat: 51.968
+    lon: 4.928
+    coordinates_source: PANGAEA dataset header 'Coverage' (BSRN station file)
+    years_screened:
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    years_selected:
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+  Carpentras:
+    lat: 44.083
+    lon: 5.059
+    coordinates_source: PANGAEA dataset header 'Coverage' (BSRN station file)
+    years_screened:
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    years_selected:
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+  Gobabeb:
+    lat: -23.5614
+    lon: 15.04198
+    coordinates_source: PANGAEA dataset header 'Coverage' (BSRN station file)
+    years_screened:
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+    years_selected:
+    - 2013
+    - 2014
+    - 2015
+    - 2016
+    - 2017
+    - 2018
+sites_below_3_years: []

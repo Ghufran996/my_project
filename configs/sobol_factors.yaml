@@ -1,0 +1,88 @@
+# Sobol factor registry for the PEM plant engine (Brief 4 item 12; PL8 / D32 / D37 / D44 / D47).
+# Every range end carries its source; ranges are uniform on the sourced bounds (PL8). A parameter without a sourced range stays at its nominal value (listed under `fixed`).
+# Both Q3 variants (D44) are defined; D47 (user, 2026-10-30) selected variant (a). The plant Sobol is run with variant (a) only.
+variants:
+  a:    # D47: PEM-only ranges; N2 washout fixed at the L28 procedural 6.5 rated-minutes; AWE-derived ends are labelled OAT scenarios (sens/inventory_oat.csv, sens/awe_procedure.csv)
+    factors: [P_MIN_F, SB_F, I_INV, P_OP, T_PURGE, T_BLOW, T_SU_COLD, C_PER_MW, R_PER_MW, XO2_OVERRIDE, PV_RATIO]
+  b:    # D44 option (b): the approved PL8/D32b/D37 ranges (inventory up to the L28 AWE pilot, washout up to the L14 abstract value), NOT run
+    factors: [P_MIN_F, SB_F, I_INV, P_OP, THETA_SPEC, T_PURGE, T_BLOW, T_SU_COLD, C_PER_MW, R_PER_MW, XO2_OVERRIDE, PV_RATIO]
+factors:
+  P_MIN_F:
+    engine_param: P_MIN_F
+    unit: x P_rated
+    range: [0.10, 0.191]
+    source: "low: L4 Virah-Sawmy 2024 Sec 2.1.3.1 (registry pmin_pem_low); high: L1 Renau 2025 Sec 3.3, 19.1 % includes BoP (registry pmin_pem_high)"
+  SB_F:
+    engine_param: SB_F
+    unit: x P_rated
+    range: [0.01, 0.18]
+    source: "low: L4 Sec 2.1.2 (registry standby_power_low); high: L13 Table 3, 45 kW / 250 kW (registry standby_power_high). Acts only under POL-B/C/D standby"
+  I_INV:
+    engine_param: I_INV
+    unit: min of rated production per bar
+    range_a: [0.120, 0.888]
+    range_b: [0.120, 3.178]
+    source: "0.120 = L32 Eq.(1) with 'roughly five minutes' at 40 bar (results/inventory_ranges.csv PEM_L32_end_40bar); 0.888 = L13 (1.7 kg, 45 min, 143 kW, 30 bar inferred; PEM_L13_end_143kW); 3.178 (variant b only) = L28 PS75 2 Nm3/h AWE pilot (AWE_L28_CAL_PS75). D44/D47"
+  P_OP:
+    engine_param: P_OP
+    unit: bar
+    range: [15.8, 30.0]
+    source: "IMPLEMENTER READING of the PL8 range '12-30 bar' restricted to PEM-sourced values (the 12 bar end is the L28 AWE production threshold): low = L25 Table 3 pressure held for a hot restart (1.58 MPa, registry pem190_hotstart_p0); high = L13 Sec 2.1 item 2 (30 bar, inferred) = L24 Table 1 (3.0 MPa). Analyst to confirm"
+  THETA_SPEC:
+    engine_param: THETA_SPEC
+    unit: rated-minutes
+    range: [6.5, 100.0]
+    source: "variant b only: 6.5 = L28 procedural purge-to-spec assumption (results/vt3.csv); 100 = L14 abstract 100 min cold-start N2 level (SN16 abstract only, AWE-derived)"
+  T_PURGE:
+    engine_param: T_PURGE
+    unit: min
+    range: [6.0, 7.0]
+    source: "L28 Table 12 purge durations of the five tests 7, 7, 7, 7, 6 min (registry awe_purge_duration = mean 6.5)"
+  T_BLOW:
+    engine_param: T_BLOW
+    unit: min
+    range: [3.0, 16.0]
+    source: "L28 Table 14 depressurisation durations 14, 8, 16, 15, 3 min (registry awe_depressurisation_duration_avg = mean 11.2); AWE-pilot durations used as the PEM engine nominal (D32c)"
+  T_SU_COLD:
+    engine_param: T_SU_COLD
+    unit: s
+    range: [2040.0, 6340.0]
+    source: "low: L24 Sec 3.3 'approximately 34 min' (registry pem50_coldstart_time, 50 kW stack); high: L25 cold start-up 6340 s (registry pem190_coldstart_time, 190 Nm3/h). PL8 'cold heat-up PEM 34-106 min'"
+  C_PER_MW:
+    engine_param: TAU_COOL (= R C / 60)
+    unit: kJ/K per MW
+    range: [1023.6315676908818, 5376.5645]
+    source: "results/thermal_ranges.csv HULL_MIN (L52 text, model-derived, flagged) and HULL_MAX (L26 Table 3 x Table 4)"
+  R_PER_MW:
+    engine_param: TAU_COOL (= R C / 60)
+    unit: K/kW (1 MW plant)
+    range: [2.3, 10.467910447761195]
+    source: "results/thermal_ranges.csv HULL_MIN (L26 printed) and HULL_MAX (L52 1/UA scaled, model-derived, flagged)"
+  XO2_OVERRIDE:
+    engine_param: XO2_OVERRIDE
+    unit: ppm O2 in H2 at the deoxo inlet (all loads)
+    range: [5.86, 2500.0]
+    source: "low: L24 Fig 3 lowest steady value 5.86 ppm (registry L24 text 5.86); high: L25 0.25 % = 2500 ppm (R22). Deoxo is NON-INFLUENTIAL for lambda_SU in the stoichiometric form (D42): included to document S_T ~ 0"
+  PV_RATIO:
+    engine_param: p_dc scale (PV size / 1.5 MWp)
+    unit: kWp per kW electrolyser
+    range: [1.0, 2.0]
+    source: "PL8 plan range 'C1 optimum 1.4-2; sensitivity 1.0-2.0' (L1 Renau 2025); the PV series is rescaled linearly (p_dc x ratio/1.5)"
+fixed:
+  - {name: T_INERT, value: "L28 7 min + 1 min pre-start", reason: "single-valued L28 datum, no range"}
+  - {name: T_FINAL_INERT, value: "L28 8 min", reason: "single-valued L28 datum (stage totals), no range"}
+  - {name: T_SU_HOT, value: "L25 1100 s", reason: "single measured hot-start datum"}
+  - {name: PHI_B_PSA, value: "VT5a fit of L1 Table 2", reason: "no sourced range of the PSA purge law (x1.5 is a labelled sensitivity, not a range)"}
+  - {name: THETA_SPEC, value: "6.5 rated-minutes (variant a)", reason: "D47"}
+  - {name: electrolyser_polarisation, value: "D29", reason: "validated as a model form, no range"}
+  - {name: t_deb, value: "1 min", reason: "policy setting; scenario axis in sens/controller.csv"}
+  - {name: albedo_IAM_DCDC, value: "PV chain nominal", reason: "SN26: only OAT sensitivity (sens/pv_chain.csv)"}
+design:
+  method: "Saltelli sampling + Sobol analysis (SALib 1.6.0), scrambled Sobol sequence"
+  N: 1024
+  calc_second_order: false
+  seeds: [11, 22, 33, 44, 55]
+  bootstrap_resamples: 1000
+  confidence_level: 0.95
+  sets: "3 sites x policies A and C, one reference year per site (the first selected year in sites.yaml: fixed a priori, not chosen on results)"
+  outputs: [lambda_SU, M_del, N_r_completed, tau_eq_median]

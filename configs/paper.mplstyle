@@ -1,0 +1,30 @@
+# One matplotlib style for the whole paper (ECM: line drawings as PNG >= 1000 dpi, D8).
+# Colour-blind-safe cycle (Okabe-Ito, Wong 2011), readable in grayscale through marker/line-style changes.
+font.family: sans-serif
+font.sans-serif: Arial, Helvetica, DejaVu Sans
+font.size: 8
+axes.labelsize: 8
+axes.titlesize: 8
+xtick.labelsize: 7
+ytick.labelsize: 7
+legend.fontsize: 7
+axes.grid: False
+axes.spines.top: False
+axes.spines.right: False
+axes.linewidth: 0.6
+xtick.direction: out
+ytick.direction: out
+xtick.minor.visible: False
+ytick.minor.visible: False
+xtick.major.width: 0.6
+ytick.major.width: 0.6
+lines.linewidth: 1.0
+lines.markersize: 4.5
+legend.frameon: False
+axes.prop_cycle: cycler('color', ['0072B2', 'D55E00', '009E73', 'CC79A7', 'E69F00', '56B4E9', '000000', 'F0E442'])
+figure.dpi: 150
+savefig.dpi: 1000
+savefig.format: png
+savefig.bbox: tight
+savefig.pad_inches: 0.03
+figure.constrained_layout.use: True

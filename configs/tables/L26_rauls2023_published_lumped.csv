@@ -1,0 +1,15 @@
+# Source: L26 Rauls et al. 2023 (see L26_rauls2023_tables.csv). Lumped thermal values quoted in the text of Sec. 3.3.2.2 (Fig. 2 values for other sizes are NOT tabulated).
+quantity,P_kW,value,unit,location
+C_th_stack_incl_water,5,16.2,kJ/K,Sec 3.3.2.2 para 3
+C_th_stack_incl_water,400,421.0,kJ/K,Sec 3.3.2.2 para 3
+C_th_stack_incl_water,1000,752.0,kJ/K,Sec 3.3.2.2 para 3
+C_th_system_total,5,51.6,kJ/K,Sec 3.3.2.2 last para (text says 'peripheral components'; reading as total system is an interpretation)
+C_th_system_total,400,1434.3,kJ/K,Sec 3.3.2.2 last para
+C_th_system_total,750,2848.6,kJ/K,Sec 3.3.2.2 last para
+C_th_system_total,1000,4407.5,kJ/K,Sec 3.3.2.2 last para
+R_th_stack,5,377.7,K/kW,Sec 3.3.2.2 para 3
+R_th_stack,50,159.2,K/kW,Sec 3.3.2.2 para 3
+R_th_stack,1000,31.9,K/kW,Sec 3.3.2.2 para 3
+R_th_system_total,5,39.7,K/kW,Sec 3.3.2.2 last para
+R_th_system_total,400,5.0,K/kW,Sec 3.3.2.2 last para
+R_th_system_total,1000,2.3,K/kW,Sec 3.3.2.2 last para

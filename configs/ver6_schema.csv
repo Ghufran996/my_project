@@ -1,0 +1,26 @@
+file,column,type,unit,definition
+series,case_id,str,-,case identifier (rows of cases_comsol.csv / ver6_cases.py)
+series,model,str,-,python_mol | lumped | comsol
+series,grid_id,str,-,N025 N050 N100 N200 N400 at rtol 1e-6 ; N400_r1e-04 and N400_r1e-08 are the tolerance variants at N=400
+series,rtol,float,-,relative tolerance of the time integrator
+series,t_s,float,s,output time (identical output grid in all models of a case)
+series,T_out_K,float,K,bed outlet temperature (x = L); NaN for isothermal cases
+series,y_H2_out,float,mol/mol,H2 mole fraction at the outlet = 1 - y_O2 - y_H2O - y_N2 (deoxo, dryer); NaN in verification cases
+series,y_O2_out,float,mol/mol,O2 mole fraction at the outlet; in verification cases the normalised tracer c/c_in
+series,y_H2O_out,float,mol/mol,H2O mole fraction at the outlet; NaN where not modelled
+series,y_N2_out,float,mol/mol,N2 mole fraction at the outlet; NaN where not modelled
+series,F_out_mol_s,float,mol/s,total molar flow at the outlet (constant molar flux assumption); NaN in verification cases
+series,p_out_Pa,float,Pa,bed pressure (isobaric within one event); NaN in verification cases
+events,case_id,str,-,
+events,model,str,-,
+events,grid_id,str,-,
+events,rtol,float,-,
+events,m_H2_consumed_kg,float,kg,H2 consumed by the reaction over the whole event (deoxo: 2 mol H2 per mol O2); NaN otherwise
+events,m_H2_vented_kg,float,kg,H2 leaving the bed before the outlet meets the specification = integral of F_out*y_H2_out from 0 to t_spec * M_H2; NaN if not defined
+events,m_H2_purge_kg,float,kg,H2 leaving the bed during a regeneration (purge) step = integral over the whole step; NaN if not a regeneration case
+events,m_H2_repress_kg,float,kg,H2 needed to re-pressurise the void volume from p_init to p_bed (ideal gas; same formula in every model); NaN if not defined
+events,t_spec_s,float,s,time of the LAST crossing of the outlet from out-of-spec to in-spec (max over species of y_i/limit_i = 1; linear interpolation); 0 if never out of spec; NaN if out of spec at the end
+events,t_break_s,float,s,first moment of breakthrough = integral from 0 to t_end of (1 - y_out/y_in) dt for the monitored species; NaN if the outlet has not reached 99 % of the inlet value or if not defined
+events,mass_balance_err,float,-,|in - out - consumed - accumulated| / max(in, out, consumed, |accumulated|) for the monitored species (O2 in deoxo cases, H2O in dryer cases, tracer in verification cases) from output-time series (trapezoid rule in time; includes time quadrature error)
+events,energy_balance_err,float,-,same for enthalpy (non-isothermal cases only); NaN otherwise
+events,wall_s,float,s,wall time of the solve

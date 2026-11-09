@@ -1,0 +1,11 @@
+numpy
+scipy
+pandas
+numba
+pvlib
+SALib
+matplotlib
+pyyaml
+pyarrow
+requests
+pytest
