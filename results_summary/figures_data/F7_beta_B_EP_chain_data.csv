@@ -1,0 +1,10 @@
+site,policy,term_irradiance_source_pp,term_resolution_pp,term_sec_convention_and_steady_purification_pp,term_startup_delays_and_losses_pp,beta_B_EP_vs_BoPPV_pct
+Cabauw,A,-1.96708,2.16607,-7.92134,25.1133,17.3909
+Cabauw,C,-1.78284,1.98366,-7.27137,14.727,7.65649
+Cabauw,D,-1.5688,1.75062,-6.42347,1.29409,-4.94756
+Carpentras,A,1.33742,0.573358,-11.2532,13.0595,3.71703
+Carpentras,C,1.30725,0.559571,-10.9874,10.3812,1.2606
+Carpentras,D,1.18933,0.50873,-9.99109,0.368976,-7.92405
+Gobabeb,A,-2.74014,0.0495916,-12.8956,7.6495,-7.93668
+Gobabeb,C,-2.72643,0.0493343,-12.8345,7.13879,-8.37279
+Gobabeb,D,-2.54608,0.0460625,-11.9881,0.0733217,-14.4148

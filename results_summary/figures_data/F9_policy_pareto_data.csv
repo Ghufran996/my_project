@@ -1,0 +1,28 @@
+site,policy,E_standby_MWh_at_0p01,E_standby_MWh_at_0p095,E_standby_MWh_at_0p18,dM_del_vs_POLA_pct,E_standby_MWh,breakeven_standby_fraction
+Cabauw,A,0,0,0,0,,
+Cabauw,B 15,2.22242,21.113,40.0035,5.14862,,
+Cabauw,B 30,3.61514,34.3438,65.0725,6.30838,,
+Cabauw,B 60,5.76231,54.7419,103.722,6.82448,,
+Cabauw,B 120,9.49994,90.2495,170.999,6.9838,,
+Cabauw,D,55.9313,531.347,1006.76,19.8897,,
+Cabauw,C,,78.954,,6.98879,,
+Cabauw,"P (bounding: no pressure decay, no crossover handling, no source)",,0,,19.2969,,
+Cabauw,D break-even marker,,,,19.8897,226.26,0.0404532
+Carpentras,A,0,0,0,0,,
+Carpentras,B 15,1.47383,14.0014,26.529,1.27497,,
+Carpentras,B 30,2.6365,25.0467,47.457,1.53206,,
+Carpentras,B 60,4.692,44.574,84.456,1.7453,,
+Carpentras,B 120,8.4695,80.4602,152.451,1.84478,,
+Carpentras,D,53.5484,508.709,963.871,11.3749,,
+Carpentras,C,,57.0532,,1.87576,,
+Carpentras,"P (bounding: no pressure decay, no crossover handling, no source)",,0,,10.4912,,
+Carpentras,D break-even marker,,,,11.3749,205.045,0.0382915
+Gobabeb,A,0,0,0,0,,
+Gobabeb,B 15,1.01369,9.6301,18.2465,0.389735,,
+Gobabeb,B 30,1.94367,18.4648,34.986,0.419113,,
+Gobabeb,B 60,3.78058,35.9155,68.0505,0.428434,,
+Gobabeb,B 120,7.43931,70.6734,133.907,0.430681,,
+Gobabeb,D,48.8557,464.13,879.404,7.10987,,
+Gobabeb,C,,24.3575,,0.429107,,
+Gobabeb,"P (bounding: no pressure decay, no crossover handling, no source)",,0,,6.8868,,
+Gobabeb,D break-even marker,,,,7.10987,178.598,0.0365561

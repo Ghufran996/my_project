@@ -1,0 +1,22 @@
+site,mechanism,d_lambda_SU_pp
+Cabauw,ALL K1 mechanisms off,-12.0332
+Cabauw,N2 washout (purge + off-spec),-2.44379
+Cabauw,blowdown,-8.48722
+Cabauw,deoxo,-2.04885e-06
+Cabauw,inert,0.454118
+Cabauw,ramp (start-up delay),0.451854
+Cabauw,steady PSA loss (steady-term sensitivity),-0.0127714
+Carpentras,ALL K1 mechanisms off,-7.58199
+Carpentras,N2 washout (purge + off-spec),-1.70085
+Carpentras,blowdown,-5.62958
+Carpentras,deoxo,-1.46519e-06
+Carpentras,inert,0.0805687
+Carpentras,ramp (start-up delay),0.0696846
+Carpentras,steady PSA loss (steady-term sensitivity),-0.00930553
+Gobabeb,ALL K1 mechanisms off,-5.35655
+Gobabeb,N2 washout (purge + off-spec),-1.28652
+Gobabeb,blowdown,-4.12222
+Gobabeb,deoxo,-1.18957e-06
+Gobabeb,inert,-0.0399969
+Gobabeb,ramp (start-up delay),-0.000862409
+Gobabeb,steady PSA loss (steady-term sensitivity),-0.00722188

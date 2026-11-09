@@ -1,0 +1,5 @@
+policy,main_effect_resolution_pct,main_effect_resolution_pct,main_effect_model_pct,main_effect_model_pct,interaction_pct,interaction_pct
+,mean,std,mean,std,mean,std
+A,2.68815,2.94256,-11.798,4.38028,3.24549,3.82281
+C,1.12487,1.38008,-9.74114,2.40557,0.237836,0.847141
+D,0.895669,0.945213,-0.47149,0.332934,-0.0154657,0.186232

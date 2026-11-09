@@ -1,0 +1,13 @@
+site,policy,output,n_days,n_clusters,slope_per_intraday_attempt,slope_ci95_halfwidth_clustered,intercept,R2,note
+Cabauw,A,lambda_SU_day_pct,1778,6,4.80964,0.593344,11.8435,0.212319,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Cabauw,A,eta_del_day,2015,6,-0.0763908,0.00576108,0.822587,0.39933,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Cabauw,C,lambda_SU_day_pct,1905,6,2.94519,0.740429,12.3117,0.141802,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Cabauw,C,eta_del_day,2053,6,-0.0494974,0.00543164,0.809554,0.354615,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Carpentras,A,lambda_SU_day_pct,1713,5,6.47004,0.662413,7.08925,0.289858,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Carpentras,A,eta_del_day,1787,5,-0.10338,0.0116001,0.883775,0.470398,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Carpentras,C,lambda_SU_day_pct,1745,5,4.11766,0.540591,8.1734,0.200575,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Carpentras,C,eta_del_day,1797,5,-0.0717673,0.0160877,0.862297,0.338821,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Gobabeb,A,lambda_SU_day_pct,2188,6,1.20091,0.499427,5.2466,0.130622,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Gobabeb,A,eta_del_day,2191,6,-0.0375426,0.0304105,0.904092,0.30005,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Gobabeb,C,lambda_SU_day_pct,2191,6,0.876502,1.35835,5.24783,0.071768,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"
+Gobabeb,C,eta_del_day,2191,6,-0.0108756,0.0159267,0.89977,0.0750147,"descriptive; daily ratio, small-denominator days included (M_stack > 1 kg); CI clustered by site-year (CR1, t with G-1 d.o.f.)"

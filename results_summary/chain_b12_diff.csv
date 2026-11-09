@@ -1,0 +1,22 @@
+file,column,rows_differing,max_relative_difference,expected,reason
+inventory_ranges.csv,__row_absent__:PEM_L13_printed_rated_flow_check,1,,yes,"D82-4: BLOCKED provenance note without producer in code/, not a code output"
+resolution/cost.csv,note,1,,yes,"Brief 9 item 2 and D89: note of the POL-A 1-min row, built from the data"
+tables/T2_supplementary.csv,__new_column__:dlog10_note,-1,,yes,D87: note column for rows with y_min_pred = 0 (derived from vt6b_l15.csv)
+tables/T2_supplementary.csv,__check_dlog10_note__,0,,yes,"D87: note on the 1 row(s) with y_min_pred = 0, empty on the others"
+tables/T2_supplementary.csv,frozen_sha256,6,,yes,"D81: copy of vt6_l15.csv frozen_sha256 inside the supplementary table (derived, same change)"
+tables/T2_supplementary.csv,dlog10_scaled,1,inf,yes,"D87: stored inf (written before the 1e-30 floor) replaced by the value at the floor, y_min_pred = 0; lower bound only"
+tables/T2_supplementary.csv,dlog10_unscaled,1,inf,yes,"D87: stored inf (written before the 1e-30 floor) replaced by the value at the floor, y_min_pred = 0; lower bound only"
+tables/T2_supplementary.csv,bt_balance_err,12,2.7745e-14,yes,D86 round-off (max absolute difference 2.77e-14; floor 1e-12 or both <= 1e-09)
+ver2l_link.csv,value,1,inf,yes,"D82-3: row (i) not re-run, value empty"
+ver2l_link.csv,passed,1,,yes,"D82-3: row (i) not re-run, pass flag empty"
+ver2l_link.csv,note,1,,yes,D82-3: row (i) note cites the historical R32 result
+ver6_dryer_gridband.csv,bt_balance_err,3,8.43251e-15,yes,D86 round-off (max absolute difference 8.43e-15; floor 1e-12 or both <= 1e-09)
+ver6_dryer_nontrace.csv,bt_balance_err,12,2.7745e-14,yes,D86 round-off (max absolute difference 2.77e-14; floor 1e-12 or both <= 1e-09)
+vt6_l15.csv,frozen_sha256,6,,yes,D81: the column carries the content hash (created excluded) instead of the file hash
+vt6b_l15.csv,__new_column__:dlog10_note,-1,,yes,D87: note column for rows with y_min_pred = 0
+vt6b_l15.csv,__check_dlog10_note__,0,,yes,"D87: note on the 1 row(s) with y_min_pred = 0, empty on the others"
+vt6b_l15.csv,dlog10_scaled,1,inf,yes,"D87: stored inf (written before the 1e-30 floor) replaced by the value at the floor, y_min_pred = 0; lower bound only"
+vt6b_l15.csv,dlog10_unscaled,1,inf,yes,"D87: stored inf (written before the 1e-30 floor) replaced by the value at the floor, y_min_pred = 0; lower bound only"
+trial_cost_chain.csv,__new_file__,-1,,yes,D82-2: re-measurement of the trial cost written by the chain (Brief 11 item 3)
+vt6_cal_verify.csv,__new_file__,-1,,yes,D81: verify mode of the VT6 calibration (Brief 11 item 1)
+trial_cost_chain.csv,__check_max_wall_s_median_lt_2s__,0,0.192069,yes,D82-2: max wall_s_median 0.1921 s < 2.0 s (direct Saltelli branch unchanged)

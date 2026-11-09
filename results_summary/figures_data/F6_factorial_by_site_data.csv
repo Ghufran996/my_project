@@ -1,0 +1,10 @@
+site,policy,effect,mean_pct,std_pct,n_site_years
+Cabauw,A,main_effect_resolution_pct,6.358,1.21111,6
+Cabauw,A,main_effect_model_pct,-17.0874,1.54927,6
+Cabauw,A,interaction_pct,7.9718,1.8079,6
+Carpentras,A,main_effect_resolution_pct,1.49849,0.228248,5
+Carpentras,A,main_effect_model_pct,-10.8656,0.38439,5
+Carpentras,A,interaction_pct,1.70766,0.304529,5
+Gobabeb,A,main_effect_resolution_pct,0.00967417,0.116094,6
+Gobabeb,A,main_effect_model_pct,-7.28566,0.0589962,6
+Gobabeb,A,interaction_pct,-0.199282,0.106402,6

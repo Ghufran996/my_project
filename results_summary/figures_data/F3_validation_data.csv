@@ -1,0 +1,34 @@
+test,label,ratio,kind,status
+VT1 heat-up (L26),galvanostatic_2step,1.05143,diagnostic,"diagnostic, CAL infeasible (D31)"
+VT1 heat-up (L26),galvanostatic_3step,1.18937,diagnostic,"diagnostic, CAL infeasible (D31)"
+VT1 heat-up (L26),potentiostatic_1p8V,1.10347,diagnostic,"diagnostic, CAL infeasible (D31)"
+VT1 heat-up (L26),potentiostatic_1p8V_plus_4kW,0.936835,diagnostic,"diagnostic, CAL infeasible (D31)"
+VT1 heat-up (L26),heating_only,0.700319,diagnostic,"diagnostic, CAL infeasible (D31)"
+VT2 pressurisation (L28),PS 20 %,0.492585,fail,FAIL (disclosed foreknowledge)
+VT2 pressurisation (L28),PS 30 %,0.942797,pass,FAIL (disclosed foreknowledge)
+VT2 pressurisation (L28),PS 35 %,0.91707,pass,FAIL (disclosed foreknowledge)
+VT2 pressurisation (L28),PS 50 %,1.20763,fail,FAIL (disclosed foreknowledge)
+VT2b PEM pressurisation (L32),25.0 bar,3.57479,fail,FAIL
+VT2b PEM pressurisation (L32),32.5 bar,4.69252,fail,FAIL
+VT2b PEM pressurisation (L32),40.0 bar,5.81026,fail,FAIL
+VT4 O$_2$ in H$_2$ (L24),primary power law,0.0150219,fail,FAIL (transient peak vs steady law)
+VT4 O$_2$ in H$_2$ (L24),secondary Fickian c/j,0.0215804,fail,FAIL (transient peak vs steady law)
+VT5a PSA purge (L1),20 % load,0.967816,consistency,"consistency, provenance unconfirmed"
+VT5a PSA purge (L1),30 % load,0.875992,consistency,"consistency, provenance unconfirmed"
+VT5a PSA purge (L1),40 % load,1.01316,consistency,"consistency, provenance unconfirmed"
+VT5a PSA purge (L1),50 % load,0.974747,consistency,"consistency, provenance unconfirmed"
+VT5a PSA purge (L1),60 % load,0.873264,consistency,"consistency, provenance unconfirmed"
+VT5a PSA purge (L1),70 % load,1.13312,consistency,"consistency, provenance unconfirmed"
+VT5a PSA purge (L1),80 % load,1.13333,consistency,"consistency, provenance unconfirmed"
+VT5a PSA purge (L1),90 % load,1.04537,consistency,"consistency, provenance unconfirmed"
+VT6 dryer breakthrough (L15),BT1,1.04719,pass,PASS
+VT6 dryer breakthrough (L15),BT3,0.982306,pass,PASS
+VT6 dryer breakthrough (L15),BT4,1.11894,pass,PASS
+VT6 dryer breakthrough (L15),BT5,1.02297,pass,PASS
+VT6 dryer breakthrough (L15),BT8,0.974735,pass,PASS
+VT6b partial regeneration (L15),BT6 t_s,1.82449,fail,FAIL
+VT6b partial regeneration (L15),BT6 q_s,1.1259,pass,FAIL
+VT6b partial regeneration (L15),BT6 outlet mole fraction,26.6233,fail,FAIL
+VT6b partial regeneration (L15),BT7 t_s,2.62461,fail,FAIL
+VT6b partial regeneration (L15),BT7 q_s,1.55673,fail,FAIL
+VT6b partial regeneration (L15),BT7 outlet mole fraction,2.8078,fail,FAIL

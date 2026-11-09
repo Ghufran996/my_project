@@ -1,0 +1,50 @@
+CHAIN START 2026-10-31T04:33:47+03:00 from step 1 of 48; python 3.12.13; cap per step 3600 s
+[01] START 2026-10-31T04:33:47+03:00 | END 2026-10-31T04:40:20+03:00 | exit 0 | 392.9 s | brief3 chain
+[02] START 2026-10-31T04:40:20+03:00 | END 2026-10-31T05:21:38+03:00 | exit 0 | 2478.8 s | vt1/vt2/vt5a
+[03] START 2026-10-31T05:21:38+03:00 | END 2026-10-31T05:22:14+03:00 | exit 0 | 36.0 s | dryer VT6 (CAL verify on BT2 against the frozen file, then held-out validation; D81)
+[04] START 2026-10-31T05:22:14+03:00 | END 2026-10-31T05:22:54+03:00 | exit 0 | 39.6 s | dryer VER-6
+[05] START 2026-10-31T05:22:54+03:00 | END 2026-10-31T05:28:41+03:00 | exit 0 | 347.5 s | VER-6c notes
+[06] START 2026-10-31T05:28:41+03:00 | END 2026-10-31T05:31:33+03:00 | exit 0 | 171.6 s | nominal (Brief 4 reporting)
+[07] START 2026-10-31T05:31:33+03:00 | END 2026-10-31T05:31:49+03:00 | exit 0 | 16.1 s | neutrality check
+[08] START 2026-10-31T05:31:49+03:00 | END 2026-10-31T05:32:10+03:00 | exit 0 | 20.5 s | BoP from PV
+[09] START 2026-10-31T05:32:10+03:00 | END 2026-10-31T05:32:28+03:00 | exit 0 | 18.7 s | controller
+[10] START 2026-10-31T05:32:28+03:00 | END 2026-10-31T05:32:46+03:00 | exit 0 | 17.7 s | inventory OAT
+[11] START 2026-10-31T05:32:46+03:00 | END 2026-10-31T05:32:55+03:00 | exit 0 | 8.5 s | inventory analysis
+[12] START 2026-10-31T05:32:55+03:00 | END 2026-10-31T05:33:25+03:00 | exit 0 | 29.9 s | POL-B sweep
+[13] START 2026-10-31T05:33:25+03:00 | END 2026-10-31T05:34:02+03:00 | exit 0 | 37.7 s | resolution
+[14] START 2026-10-31T05:34:02+03:00 | END 2026-10-31T05:34:04+03:00 | exit 0 | 1.5 s | resolution analysis
+[15] START 2026-10-31T05:34:04+03:00 | END 2026-10-31T05:34:18+03:00 | exit 0 | 13.9 s | AWE procedure
+[16] START 2026-10-31T05:34:18+03:00 | END 2026-10-31T05:34:32+03:00 | exit 0 | 14.7 s | PV chain sensitivity
+[17] START 2026-10-31T05:34:32+03:00 | END 2026-10-31T05:35:39+03:00 | exit 0 | 66.3 s | beta decomposition
+[18] START 2026-10-31T05:35:39+03:00 | END 2026-10-31T05:36:58+03:00 | exit 0 | 79.3 s | falsification grid
+[19] START 2026-10-31T05:36:58+03:00 | END 2026-10-31T05:37:01+03:00 | exit 0 | 3.0 s | break-even
+[20] START 2026-10-31T05:37:01+03:00 | END 2026-10-31T05:37:10+03:00 | exit 0 | 9.3 s | POL-P
+[21] START 2026-10-31T05:37:10+03:00 | END 2026-10-31T05:37:11+03:00 | exit 0 | 1.2 s | POL-P m_SU comparison (Brief 6 item 3)
+[22] START 2026-10-31T05:37:11+03:00 | END 2026-10-31T05:37:14+03:00 | exit 0 | 2.9 s | standby break-even
+[23] START 2026-10-31T05:37:14+03:00 | END 2026-10-31T05:37:29+03:00 | exit 0 | 14.9 s | event structure
+[24] START 2026-10-31T05:37:29+03:00 | END 2026-10-31T05:37:45+03:00 | exit 0 | 15.6 s | dryer scenarios
+[25] START 2026-10-31T05:37:45+03:00 | END 2026-10-31T05:37:55+03:00 | exit 0 | 9.8 s | VT6b definitions
+[26] START 2026-10-31T05:37:55+03:00 | END 2026-10-31T05:48:27+03:00 | exit 0 | 632.5 s | VT6b
+[27] START 2026-10-31T05:48:27+03:00 | END 2026-10-31T05:48:30+03:00 | exit 0 | 2.9 s | dryer event bounds (i, ii; superseded by the composed file two steps below)
+[28] START 2026-10-31T05:48:30+03:00 | END 2026-10-31T05:58:33+03:00 | exit 0 | 602.8 s | dryer plant cases (non-trace), on-spec throughput and off-spec timing
+[29] START 2026-10-31T05:58:33+03:00 | END 2026-10-31T06:01:19+03:00 | exit 0 | 165.8 s | dryer grid band N = 800 (Brief 6 item 6)
+[30] START 2026-10-31T06:01:19+03:00 | END 2026-10-31T06:05:45+03:00 | exit 0 | 265.9 s | dryer grid band N = 1600
+[31] START 2026-10-31T06:05:45+03:00 | END 2026-10-31T06:18:56+03:00 | exit 0 | 791.5 s | dryer grid band N = 3200 (about 15-20 min)
+[32] START 2026-10-31T06:18:56+03:00 | END 2026-10-31T06:18:57+03:00 | exit 0 | 1.4 s | dryer grid band summary (order, Richardson, GCI)
+[33] START 2026-10-31T06:18:57+03:00 | END 2026-10-31T06:19:00+03:00 | exit 0 | 2.7 s | dryer event bounds composed (per-event kg, POL-A annual pp)
+[34] START 2026-10-31T06:19:00+03:00 | END 2026-10-31T06:19:04+03:00 | exit 0 | 3.8 s | Ishigami check
+[35] START 2026-10-31T06:19:04+03:00 | END 2026-10-31T06:19:09+03:00 | exit 0 | 5.4 s | Sobol PEM A, C (D47, Brief 4)
+[36] START 2026-10-31T06:19:09+03:00 | END 2026-10-31T06:19:13+03:00 | exit 0 | 4.0 s | final UQ (Brief 5 item 7; resumes from checkpoints; 11 independent worker processes)
+[37] START 2026-10-31T06:19:13+03:00 | END 2026-10-31T06:19:20+03:00 | exit 0 | 6.6 s | B-S3 seeds 22/33/44/55 (Brief 7 item 2, D67a; 272 tasks, claim-based worker processes, tasks skip by checkpoint)
+[38] START 2026-10-31T06:19:20+03:00 | END 2026-10-31T06:19:24+03:00 | exit 0 | 4.0 s | UQ completion check (Brief 6 item 8, extended in Brief 7 item 2 to the 272 B-S3 tasks; exit code 1 if any of the 763 tasks is missing or fails)
+[39] START 2026-10-31T06:19:24+03:00 | END 2026-10-31T06:19:28+03:00 | exit 0 | 3.8 s | tau population and tau_mean closed-form check (Brief 7 item 3)
+[40] START 2026-10-31T06:19:28+03:00 | END 2026-10-31T06:19:41+03:00 | exit 0 | 13.5 s | POL-B60 nominal cells and RR5 cells for POL-B60, POL-D (Brief 7 item 4a, b)
+[41] START 2026-10-31T06:19:41+03:00 | END 2026-10-31T06:19:56+03:00 | exit 0 | 14.8 s | C3 comparable quantities incl. ratio 0.75 (Brief 7 item 5a)
+[42] START 2026-10-31T06:19:56+03:00 | END 2026-10-31T06:19:59+03:00 | exit 0 | 3.4 s | C3 capacity factors, timestep decomposition, delivered H2 60 vs 5 min (Brief 7 item 5b-d)
+[43] START 2026-10-31T06:19:59+03:00 | END 2026-10-31T06:20:02+03:00 | exit 0 | 3.0 s | first cycle of each simulated year (side brief S item 2)
+[44] START 2026-10-31T06:20:02+03:00 | END 2026-10-31T06:20:07+03:00 | exit 0 | 4.1 s | C3 load shape and closed-form efficiency-convention term (side brief S item 3)
+[45] START 2026-10-31T06:20:07+03:00 | END 2026-10-31T06:26:12+03:00 | exit 0 | 365.7 s | UQ summaries (Brief 6 item 9; Brief 7 items 1, 3: beta pooled over 5 seeds with years concatenated, tau_mean, nominal percentile)
+[46] START 2026-10-31T06:26:12+03:00 | END 2026-10-31T06:26:34+03:00 | exit 0 | 21.7 s | figures F2-F9
+[47] START 2026-10-31T06:26:34+03:00 | END 2026-10-31T06:26:36+03:00 | exit 0 | 1.7 s | tables T1-T6
+[48] START 2026-10-31T06:26:36+03:00 | END 2026-10-31T06:27:50+03:00 | exit 0 | 74.3 s | tests
+CHAIN END 2026-10-31T06:27:50+03:00 | OK | wall 6843.3 s

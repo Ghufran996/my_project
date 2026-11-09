@@ -1,0 +1,8 @@
+# Panel A of F4: the dot is the median (50 %), the vertical line (whisker) runs from the 10th to the 90th percentile of tau_eq (rated-min) over the completed cycles of the site-years of the site (POL-A); the number n of cycles is in the tick label; column 'count' = n; class labels Hot/Warm/Cold follow the cycle-file column class_0hot_1warm_2cold
+site,cls,count,mean,std,min,10%,50%,90%,max
+Cabauw,Cold,1678,28.4491,10.9272,3.55324,23.449,24.4666,40.6852,199.589
+Cabauw,Warm,334,33.4886,13.8308,22.5465,24.3808,25.3303,50.8807,108.866
+Carpentras,Cold,1686,25.9298,5.62306,3.4157,23.8768,24.4528,28.7207,97.9492
+Carpentras,Warm,92,31.0616,10.7145,23.1559,24.2116,25.3428,44.7162,81.3862
+Gobabeb,Cold,2185,24.4862,1.94766,3.68023,24.0556,24.5032,24.6151,68.3024
+Gobabeb,Warm,5,39.8756,15.0768,24.871,24.9774,41.1521,55.205,59.5896

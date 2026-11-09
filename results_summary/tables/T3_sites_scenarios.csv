@@ -1,0 +1,12 @@
+item,value
+Plant,"PEM 1 MW stack-level DC rating; auxiliaries from an auxiliary supply (nominal), BoP from the PV bus as sensitivity (L24 constant share; L1 Table 1 laboratory-scale bound)"
+PV,"1.5 MWp (ratio 1.5; scenarios 1.0 and 2.0), BSRN 1-min GHI/DNI/DHI via the pvlib chain"
+Sites and years,"Cabauw 6, Carpentras 5, Gobabeb 6 site-years (2013-2018, 95 % screen); 17 in total"
+Policies,"POL-A depressurise and inert at every stop; POL-B 15/30/60/120 min hot standby then A; POL-C standby through daylight stops; POL-D 24 h hot standby; POL-P bounding (retained inventory, cooling, no source)"
+Input resolution,1-min reference; 5/15/30/60-min block means held on the 1-min grid
+Controller,t_deb 1/5/15 min; abort-hold variant
+Falsification grid,"theta_spec {0,1,2,3.25,6.5,13,25,50,100} rated-min x inventory {0.120, 0.699} min/bar x P_OP {12, 15.8, 30} bar, POL-A and POL-C"
+Dryer steady term,s(L) nominal; constant 1.02 % (L15); constant 1.6 % (L14)
+Dryer start-up,"outside the engine: re-pressurisation, extra regeneration purge and off-spec bounds (D53)"
+UQ,"10 epistemic factors (PV ratio fixed 1.5; design factor in the Sobol rows), N = 1024 scrambled Sobol sequence x 5 seeds (11/22/33/44/55); Saltelli N = 1024 x 5 seeds for POL-A, POL-B60, POL-C at the reference year"
+Technology,PEM; AWE procedure values only as labelled sensitivities
