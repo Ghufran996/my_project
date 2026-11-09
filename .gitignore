@@ -1,0 +1,20 @@
+# environments and caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# regenerated outputs and large inputs (see README)
+results/
+COMSOL_MATLAB/
+.work/
+
+# documents and editor files
+*.docx
+*.pptx
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
